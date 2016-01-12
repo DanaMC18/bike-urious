@@ -1,0 +1,12 @@
+.modal-container {
+  display: none;
+  position: absolute;
+  background-color: rgba(126, 149, 199, 0.3);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*.modal-content {
+  position: fixed;
+}*/
