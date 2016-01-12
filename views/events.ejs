@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bike-urious Events</title>
+	<link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.css">
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/moment/min/moment.min.js"></script>
+  <script src="/bower_components/handlebars/handlebars.js"></script>
+  <script src="/bower_components/fullcalendar/dist/fullcalendar.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+	
+	<script id="events-template" type="x-template">
+		<h3> {{name}} </h3>
+		<p> Sponsor: {{sponsor}} </p>
+		<p> About: {{description}} </p>
+		<p> Spots Available: {{max_attendees}} </p>
+		<p> Spots Taken: {{rsvps.length}} </p>
+	</script>
+
+
+</body>
+</html>
