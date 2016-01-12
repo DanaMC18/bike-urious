@@ -1,0 +1,26 @@
+{
+  "name": "bike-urious",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanaMC18/bike-urious.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanaMC18/bike-urious/issues"
+  },
+  "homepage": "https://github.com/DanaMC18/bike-urious#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "moment": "^2.11.1",
+    "mongo": "^0.1.0"
+  }
+}
