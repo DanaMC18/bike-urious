@@ -1,19 +1,22 @@
 console.log('bicycle! bicycle!')
 
 $(document).ready(function(){
+
+ var renderEvent = function(response){
+  // console.log(response);
+  var events = {events: response}
+  $('#calendar').fullCalendar('addEventSource', events);
+ }
  
+  $.ajax({
+    url: '/events',
+    type: 'get',
+    dataType: 'json'
+  }).done(renderEvent);
+
  $('#calendar').fullCalendar({
-    // var events = require('../lib/events.json')
     dayClick: function(){
       console.log('a day has been clicked!!')
-      // $.ajax({
-      //   url: '/days_events',
-      //   type: 'get',
-      //   dataType: 'json',
-      //   data: 
-      //   }).done(function(response){
-      //     console.log(response);
-      //   })
     }
  })
 

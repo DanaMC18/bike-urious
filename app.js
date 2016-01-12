@@ -45,14 +45,15 @@ app.get('/', function (req, res){
 })
 
 app.get('/calendars', function (req, res){
-  db.collection('bikes').find({}).toArray(function (err, results){
-    console.log(results)
-    res.render('events', {events: results});     
+    res.render('events');     
   })
-})
+
 
 app.get('/events', function (req, res){
-  // db.collection('bikes').findOne({start: })
+  db.collection('bikes').find({}).toArray(function (err, results){
+    console.log(results);
+    res.json(results)
+  })
 })
 
 app.listen(3000);
